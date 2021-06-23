@@ -53,6 +53,22 @@ void allowMenu()
 	printf("--------4.修改菜品价格----------\n");
 }
 
+void Addfood()//添加食物
+{
+	FOOD *p;
+	FILE* fp;
+	fopen("food.txt", "a+");
+	if (fp == NULL)
+	{
+		printf("can not open file\n");
+	}
+	if (fwrite(p1, M, 1, fp) == 1)//返回实际写入的数据项个数
+	{
+		printf("file write error\n");
+	}
+	fclose(fp);
+}
+
 int main()
 {
 	int choice;
@@ -79,7 +95,8 @@ int main()
 			switch(choice)
 			{
 			case 1: {//增加菜品
-
+				Addfood();
+			
 			}
 				
 
