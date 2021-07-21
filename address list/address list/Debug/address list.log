@@ -1,0 +1,3 @@
+﻿  contact.c
+D:\git\project\address list\address list\contact.c(29,27): warning C4028: 形参 1 与声明不同
+  address list.vcxproj -> D:\git\project\address list\Debug\address list.exe
